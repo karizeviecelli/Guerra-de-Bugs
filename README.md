@@ -120,7 +120,7 @@ Fecharemos com uma roda de conversa:
 
 ---
 
-**Professora:** Kaarize  
+**Professora:** Karize  
 **Curso:** Técnico em Desenvolvimento de Sistemas – SENAI  
 **Metodologia:** Aprendizagem Ativa e Colaborativa  
 **Duração:** 4h  

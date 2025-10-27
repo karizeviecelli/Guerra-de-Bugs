@@ -2,8 +2,8 @@
 # 🐞 Relato de Bug
 
 **Projeto:**  
-**Aluno que encontrou:**  
-**Aluno dona do projeto:**  
+**Aluno que encontrou:Carlos**  
+**Aluno dona do projeto:Matheus**  
 **Severidade:** (Crítica | Média | Leve)  
 **Componente / Tela:**  
 

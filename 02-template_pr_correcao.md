@@ -2,7 +2,7 @@
 # 🔧 PR de Correção de Bug
 
 **Projeto:**  
-**Equipe dona do projeto:**  
+**Aluno dono do projeto:**  
 **Bug relacionado:** #  
 
 ## Descrição da correção

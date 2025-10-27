@@ -17,8 +17,8 @@ O objetivo é testar, documentar e corrigir falhas de forma colaborativa, aplica
 ## 🧩 Estrutura da Atividade
 
 ### 🔁 Etapa 1 – Troca de Projetos
-Cada equipe entrega sua última versão funcional do projeto (**Java + Spring + Thymeleaf**).  
-A professora redistribui os projetos entre as equipes — cada grupo agora é **testador** de outro projeto.
+Cada Aluno entrega sua última versão funcional do projeto (**Java + Spring + Thymeleaf**).  
+A professora redistribui os projetos entre os alunos — cada aluno agora é **testador** de outro projeto.
 
 ---
 
@@ -29,14 +29,14 @@ Os testadores devem:
 3. Registrar cada bug usando o modelo:  
    - `01-template_relato_bug.md`  
 
-⚠️ **Não é permitido corrigir o código de outro grupo!**  
+⚠️ **Não é permitido corrigir o código de outro aluno!**  
 O papel é **testar, documentar e evidenciar**.
 
 ---
 
 ### 🔧 Etapa 3 – Correção pelos Donos
 Após o registro dos bugs:
-1. A equipe **dona do projeto** analisa e corrige cada erro.
+1. O aluno **dono do projeto** analisa e corrige cada erro.
 2. Cada correção deve ser submetida como Pull Request, usando o modelo:
    - `02-template_pr_correcao.md`  
 3. É fundamental apresentar **evidências de teste** (print, log ou teste automatizado).
@@ -44,7 +44,7 @@ Após o registro dos bugs:
 ---
 
 ### ✅ Etapa 4 – Validação e Placar Final
-A equipe que encontrou o bug deve **validar a correção**.  
+O aluno que encontrou o bug deve **validar a correção**.  
 Um **Kanban** (físico ou digital) será usado para acompanhar o progresso.
 
 #### 📋 Colunas do Kanban:

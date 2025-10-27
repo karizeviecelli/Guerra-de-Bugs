@@ -2,27 +2,26 @@
 # 🐞 Relato de Bug
 
 **Projeto:**  
-**Aluno que encontrou:**  
-**Aluno dona do projeto:**  
-**Severidade:** (Crítica | Média | Leve)  
-**Componente / Tela:**  
+**Aluno que encontrou: Matheus**  
+**Aluno dona do projeto: Carlos**  
+**Severidade: Crítica**    
+**Componente / Tela: Tela de categoria, onde aparece a lista**  
 
 ## Passos para reproduzir
-1. 
-2. 
-3. 
+1. Entrar no sistema
+2. **Clicar em Categoria na header**
 
 ### Resultado obtido
-(prints, logs, stacktrace)
+![alt text](image.png)
 
 ### Resultado esperado
-(descrever o comportamento correto)
+Ao clicar no botão, deveria aparecer a lista de categorias, onde teria nelas botão de excluir e atualizar e um botão para cadastrar categoria.
 
 ## Hipótese de causa-raiz
-Possível origem do bug (validação, service, controller, template...)
+Falta da criação da parte de categorias.
 
 ## Evidência / Print
-(anexar imagem)
+![alt text](image-1.png)
 
 ---
-**Status:** (Aberto | Corrigido | Validado)
+**Status: Aberto**

@@ -2,8 +2,8 @@
 # 🐞 Relato de Bug
 
 **Projeto:**  
-**Equipe que encontrou:**  
-**Equipe dona do projeto:**  
+**Aluno que encontrou:**  
+**Aluno dona do projeto:**  
 **Severidade:** (Crítica | Média | Leve)  
 **Componente / Tela:**  
 

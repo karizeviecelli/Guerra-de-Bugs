@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tarefas - Sistema de Tarefas</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Tarefas</h1>
+    <nav>
+      <a href="/index.html">Painel</a>
+      <a href="/users.html">Usuários</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Cadastrar/Atualizar tarefa</h2>
+      <form id="task-form">
+        <input type="hidden" id="task-id">
+        <label>Título<br><input type="text" id="task-titulo" required></label>
+        <label>Descrição<br><input type="text" id="task-descricao" required></label>
+        <label>Data (AAAA-MM-DD)<br><input type="date" id="task-data" required></label>
+        <label>Status<br>
+          <select id="task-status">
+            <option value="1">1 - Em aberto</option>
+            <option value="2">2 - Em andamento</option>
+            <option value="3">3 - Concluído</option>
+            <option value="4">4 - Cancelado</option>
+          </select>
+        </label>
+        <label>Email do usuário<br><input type="email" id="task-email" required></label>
+        <button type="submit">Salvar</button>
+        <button type="button" id="task-clear">Limpar</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Lista de tarefas</h2>
+      <div id="tasks-list">Carregando...</div>
+    </section>
+  </main>
+
+  <footer>
+    <small>API base: <code>/task</code></small>
+  </footer>
+</body>
+</html>

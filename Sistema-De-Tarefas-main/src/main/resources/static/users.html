@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Usuários - Sistema de Tarefas</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Usuários</h1>
+    <nav>
+      <a href="/index.html">Painel</a>
+      <a href="/tasks.html">Tarefas</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Cadastrar usuário</h2>
+      <form id="user-form">
+        <label>Nome<br><input type="text" id="user-nome" required></label>
+        <label>Email<br><input type="email" id="user-email" required></label>
+        <label>Senha<br><input type="password" id="user-password" required></label>
+        <button type="submit">Salvar</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label>Email<br><input type="email" id="login-email" required></label>
+        <label>Senha<br><input type="password" id="login-password" required></label>
+        <button type="submit">Entrar</button>
+      </form>
+      <div id="login-result" class="muted"></div>
+    </section>
+
+    <section class="card">
+      <h2>Lista de usuários</h2>
+      <div id="users-list">Carregando...</div>
+    </section>
+  </main>
+
+  <footer>
+    <small>API base: <code>/user</code></small>
+  </footer>
+</body>
+</html>

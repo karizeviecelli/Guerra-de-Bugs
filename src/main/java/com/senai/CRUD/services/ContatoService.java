@@ -10,6 +10,7 @@ import com.senai.CRUD.repositories.CidadeRepository;
 import com.senai.CRUD.repositories.ContatoRepository;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -32,6 +33,7 @@ public class ContatoService {
             contato.setEmail(dados.getEmail());
             contato.setTelefone(dados.getTelefone());
             contato.setCidade(cidade);
+            contato.setDataCadastro(LocalDate.now());
             contatoRepository.save(contato);
             return true;
         }

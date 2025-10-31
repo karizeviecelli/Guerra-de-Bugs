@@ -33,6 +33,7 @@
             <th>Email</th>
             <th>Telefone</th>
             <th>Cidade</th>
+            <th>Data de Cadastro</th>
             <th style="white-space: nowrap;">Atualizar</th>
             <th style="white-space: nowrap;">Excluir</th>
           </tr>
@@ -45,6 +46,7 @@
             <td th:text="${contato.email}"></td>
             <td th:text="${contato.telefone}"></td>
             <td th:text="${contato.cidade}"></td>
+            <td th:text="${#temporals.format(contato.dataCadastro, 'dd/MM/yyyy')}"></td>
             <td><a th:href="@{'/contatoatualizar/' + ${contato.id}}" class="btn btn-warning">Alterar</a></td>
             <td><button th:data-contato-id="${contato.id}" class="excluir btn btn-danger">Excluir</button></td>
           </tr>

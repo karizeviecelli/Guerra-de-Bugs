@@ -1,9 +1,6 @@
 package com.senai.CRUD.services;
 
-import com.senai.CRUD.dtos.ErrorMessage;
-import com.senai.CRUD.dtos.LoginDto;
-import com.senai.CRUD.dtos.RequisicaoDto;
-import com.senai.CRUD.dtos.RespostaDto;
+import com.senai.CRUD.dtos.*;
 import com.senai.CRUD.exceptions.EmailExistException;
 import com.senai.CRUD.exceptions.LoginInvalidoException;
 import com.senai.CRUD.exceptions.UsuarioNotFoundException;
@@ -106,12 +103,14 @@ public class UsuarioService {
                 .findFirst()
                 .map(RespostaDto::new);
     }
-    public boolean validarLogin(LoginDto dto){
+    public UsuarioSessaoDto validarLogin(LoginDto dto){
        List<UsuarioModel>usuarios = usuarioRepository.findAll();
-
+        UsuarioSessaoDto usuarioSessao = new UsuarioSessaoDto();
         for(UsuarioModel u : usuarios){
             if (u.getLogin().equals(dto.getLogin()) && u.getSenha().equals(dto.getSenha())){
-                return true;
+                usuarioSessao.setId(u.getId());
+                usuarioSessao.setNome(u.getNome());
+                return usuarioSessao;
             }
         }
         throw new LoginInvalidoException();

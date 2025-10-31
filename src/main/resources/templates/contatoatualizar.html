@@ -28,29 +28,30 @@
 
                 <!-- Adiciona uma margem inferior de 1rem (16px) ao elemento -->
                 <div class="mb-3">
-                    <label for="contato_id" class="form-label">ID</label>
-                    <input type="number" class="form-control" th:field="*{id}" id="contato_id" name="contato_id" disabled required/>
-                </div>
-                <div class="mb-3">
                     <label for="contato_nome" class="form-label">Nome</label>
-                    <input type="text" class="form-control" th:field="*{nome}" id="contato_nome" name="cidade_nome"  required/>
+                    <input type="text" class="form-control" th:field="*{nome}" id="contato_nome" required/>
                 </div>
+
                 <div class="mb-3">
                     <label for="contato_email" class="form-label">Email</label>
-                    <input type="text" class="form-control" th:field="*{email}" id="contato_email" name="contato_email"  required/>
+                    <input type="text" class="form-control" th:field="*{email}" id="contato_email" required/>
                 </div>
+
                 <div class="mb-3">
                     <label for="contato_telefone" class="form-label">Telefone</label>
-                    <input type="number" class="form-control" th:field="*{telefone}" id="contato_telefone" name="contato_telefone"  required/>
+                    <input type="number" class="form-control" th:field="*{telefone}" id="contato_telefone" required/>
                 </div>
+
                 <div class="mb-3">
-                    <label for="cidade" class="form-label"></label>
+                    <label for="contato_dataCadastro" class="form-label">Data Cadastrado</label>
+                    <input type="date" class="form-control" th:field="*{dataCadastro}" id="contato_dataCadastro" readonly required/>
+                </div>
+
+                <div class="mb-3">
+                    <label for="cidade" class="form-label">Cidade</label>
                     <select class="form-select" th:field="*{cidade}" id="cidade" required>
-                        <option value="" disabled selected>Selecione uma Cidade</option>
-                        <option th:each="cidade : ${cidadeDto}"
-                                th:value="${cidade.nome}"
-                                th:text="${cidade.nome}">
-                        </option>
+                        <option value="" disabled>Selecione uma Cidade</option>
+                        <option th:each="cidade : ${cidadeDto}" th:value="${cidade.nome}" th:text="${cidade.nome}"></option>
                     </select>
                 </div>
 

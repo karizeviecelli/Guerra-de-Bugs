@@ -38,9 +38,6 @@ public class EstadoService {
         List<EstadoModel>estadoModelList = repository.findAll();
         List<RespostaEstadoDto>listaEstadoDto = new ArrayList<>();
 
-        if (estadoModelList.isEmpty()){
-            throw new EstadoNotFoundException();
-        }
         for (EstadoModel es : estadoModelList){
             listaEstadoDto.add(new RespostaEstadoDto(es));
         }

@@ -2,6 +2,8 @@ package com.senai.CRUD.models;
 
 import jakarta.persistence.*;
 
+import java.time.LocalDate;
+
 @Entity
 @Table(name = "contato")
 public class ContatoModel {
@@ -14,15 +16,18 @@ public class ContatoModel {
     private String email;
     @Column(name = "telefone", nullable = false,length = 12)
     private long telefone;
+    @Column(name = "data_cadastro",nullable = false)
+    private LocalDate dataCadastro;
     @ManyToOne
     @JoinColumn(name = "cidade")
     private CidadeModel cidade;
 
-    public ContatoModel(Long id, String nome, String email, CidadeModel cidade) {
+    public ContatoModel(Long id, String nome, String email, CidadeModel cidade,LocalDate dataCadastro) {
         this.id = id;
         this.nome = nome;
         this.email = email;
         this.cidade = cidade;
+        this.dataCadastro = dataCadastro;
     }
     public ContatoModel() {}
 
@@ -64,5 +69,13 @@ public class ContatoModel {
 
     public void setTelefone(long telefone) {
         this.telefone = telefone;
+    }
+
+    public void setDataCadastro(LocalDate dataCadastro) {
+        this.dataCadastro = dataCadastro;
+    }
+
+    public LocalDate getDataCadastro() {
+        return dataCadastro;
     }
 }
